@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>Etsy</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <section class="header_section">
+    <h1>Etsy</h1>
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search for Items or Shops" size="40">
+      </div>
+      <button id="searchbutton" type="submit" class="btn btn-default">Search</button>
+    </form>
+    <div class="right_navigation">
+      <p>Sell on Etsy</p>
+      <p>Register</p>
+      <a src="#" class="sign-in-button">Sign In</a>
+      <p>Cart</p>
+    </div>
+  </section>
+
+  <section id="categories-bar">
+    <p id="clothing-and-acc">Clothing and Accessories</p>
+    <p>Jewelry</p>
+    <p>Craft Supplies and Tools</p>
+    <p>Weddings</p>
+    <p>Entertainment</p>
+    <p>Home and Living</p>
+    <p>Kids and Baby</p>
+    <p>Vintage</p>
+  </section>
+
+  <section id="sidebar">
+    <div class="categories">
+      <p>All Categories</p>
+      <p>Art and Collectables <br> Craft Supplies and Tools <br> Accessories <br> Clothing <br> Show More</p>
+    </div>
+    <div class="location">
+      <p>Shop Location</p>
+      <p>Anywhere</p>
+      <p>United States</p>
+      <p>Custom</p>
+    </div>
+    <div class="type">
+      <p>Item Type</p>
+      <p>All Items</p>
+      <p>Handmade</p>
+      <p>Vintage</p>
+    </div>
+    <div class="price">
+      <p>Price</p>
+      <p>Any Price</p>
+      <p>Under $25</p>
+      <p>$25 to $50</p>
+      <p>$50 to $100</p>
+      <p>Over $100</p>
+      <p>Custom</p>
+    </div>
+    <div class="color">
+      <p>Black</p>
+      <p>White</p>
+      <p>Red</p>
+      <p>Green</p>
+      <p>Yellow</p>
+      <p>Show More</p>
+    </div>
+    <div class="ordering">
+      <p>Accepts Etsy gift cards</p>
+      <p>Customizeable</p>
+    </div>
+    <div class="shipping">
+      <p>Ship to</p>
+      <p>United States</p>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <div class="item-styling">
+      <div id="item-container" class="row">
+        <!-- handlebars goes here -->
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Handlebars template -->
+  <script id="item-template" type="text/x-handlebars-template">
+    <div class="item-column col-md-3">
+      <img src="{{ Images.0.url_170x135 }}" alt="">
+      <h3 class="itemheader">{{ title }}</h3>
+      <p class="shop-name">{{ Shop.shop_name }}</p>
+      <p>STARS GO HERE</p>
+      <p class="item-price">${{ price }}</p>
+    </div>
+  </script>
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>

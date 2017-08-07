@@ -1,0 +1,121 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Graphik Webfont","Arial","Helvetica",sans-serif;
+  color: #777;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+h1 {
+  display: inline;
+  padding-left: 50px;
+  margin-top: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.header_section {
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+
+.navbar-form {
+  display: inline-block;
+}
+
+#searchbutton {
+  background-color: #F56400;
+  color: #ffffff;
+  position: relative;
+  right: 20px;
+  top: 1px;
+  height: 34px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.right_navigation {
+  display: inline-block;
+  float: right;
+  padding-top: 20px;
+  p {
+    display: inline;
+    padding: 10px;
+  }
+}
+
+.sign-in-button {
+  border-right: 1px solid #000000;
+  border: 1px solid #F56400;
+  border-radius: 5px;
+  padding: 7px;
+
+  &:hover{
+    
+  }
+}
+
+#categories-bar {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+
+  p {
+    display: inline;
+    padding: 0 7px 0 7px;
+  }
+}
+
+#sidebar {
+  position: absolute;
+  border: 1px solid grey;
+  width: auto;
+  margin: 30px 0 0 30px;
+  padding: 20px;
+}
+
+.categories, .location, .type, .price, .color, .ordering {
+  border-bottom: 1px solid grey;
+}
+
+.item-styling {
+  float: right;
+  width: 85%;
+  margin-top: 30px;
+}
+
+
+.itemheader {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.item-column {
+  height: 330px;
+  img {
+    width: 100%;
+  }
+}
+.shop-name {
+  color: grey;
+  font-size: 12px;
+}
+.item-price {
+  font-weight: bold;
+  font-size: 16px;
+}

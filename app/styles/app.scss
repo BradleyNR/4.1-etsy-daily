@@ -24,7 +24,10 @@ h1 {
   padding-left: 50px;
   margin-top: 20px;
   position: relative;
-  top: 10px;
+  top: 8px;
+  color: #F56400;
+  font-family: serif;
+  font-weight: bold;
 }
 
 .header_section {
@@ -45,50 +48,86 @@ h1 {
   height: 34px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .right_navigation {
   display: inline-block;
   float: right;
   padding-top: 20px;
-  p {
+  a {
     display: inline;
     padding: 10px;
+    color: #F56400;
+    letter-spacing: 2px;
   }
 }
 
 .sign-in-button {
-  border-right: 1px solid #000000;
+  border-right: 1px solid #777;
   border: 1px solid #F56400;
   border-radius: 5px;
-  padding: 7px;
+  padding: 10px;
+  margin-right: 10px;
 
   &:hover{
-    
+    text-decoration: none;
+    background-color: lighten(#0192B5, 50%);
   }
 }
 
-#categories-bar {
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  padding: 10px;
+.cartbutton {
+  border-left: 1px solid #000000;
+  margin-right: 20px;
+}
 
-  p {
+#categories-bar {
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777;
+  padding: 10px;
+  box-shadow:0px 1px 1px rgba(0,0,0,0.2);
+
+  a {
     display: inline;
     padding: 0 7px 0 7px;
+    color: #777;
+    font-weight: lighter;
   }
+}
+
+#clothing-and-acc {
+  margin-left: 25px;
+}
+
+.container {
+  margin-right: 20px;
 }
 
 #sidebar {
   position: absolute;
-  border: 1px solid grey;
-  width: auto;
+  border: 1px solid #777;
+  width: 240px;
   margin: 30px 0 0 30px;
   padding: 20px;
 }
 
+.sidebarheader {
+  font-weight: bold;
+  color: darken(#FFF, 70%);
+  font-size: 12px;
+}
+
+.sidebaritem {
+  font-size: 12px;
+  margin-left: 15px;
+  padding: 0;
+}
+
 .categories, .location, .type, .price, .color, .ordering {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #777;
 }
 
 .item-styling {
@@ -110,11 +149,19 @@ h1 {
   img {
     width: 100%;
   }
+  p {
+    margin: 0;
+  }
 }
 .shop-name {
   color: grey;
   font-size: 12px;
 }
+
+.stars {
+  color: #F56400;
+}
+
 .item-price {
   font-weight: bold;
   font-size: 16px;

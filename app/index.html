@@ -18,65 +18,71 @@
       <button id="searchbutton" type="submit" class="btn btn-default">Search</button>
     </form>
     <div class="right_navigation">
-      <p>Sell on Etsy</p>
-      <p>Register</p>
+      <a>Sell on Etsy</a>
+      <a>Register</a>
       <a src="#" class="sign-in-button">Sign In</a>
-      <p>Cart</p>
+      <a class="cartbutton">Cart</a>
     </div>
   </section>
 
   <section id="categories-bar">
-    <p id="clothing-and-acc">Clothing and Accessories</p>
-    <p>Jewelry</p>
-    <p>Craft Supplies and Tools</p>
-    <p>Weddings</p>
-    <p>Entertainment</p>
-    <p>Home and Living</p>
-    <p>Kids and Baby</p>
-    <p>Vintage</p>
+    <a href="#" id="clothing-and-acc">Clothing and Accessories</a>
+    <a href="#">Jewelry</a>
+    <a href="#">Craft Supplies and Tools</a>
+    <a href="#">Weddings</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Home and Living</a>
+    <a href="#">Kids and Baby</a>
+    <a href="#">Vintage</a>
   </section>
 
   <section id="sidebar">
     <div class="categories">
-      <p>All Categories</p>
-      <p>Art and Collectables <br> Craft Supplies and Tools <br> Accessories <br> Clothing <br> Show More</p>
+      <p class="sidebarheader">All Categories</p>
+      <p class="sidebaritem">Art and Collectables</p>
+      <p class="sidebaritem">Craft Supplies and Tools</p>
+      <p class="sidebaritem">Accessories</p>
+      <p class="sidebaritem">Clothing</p>
+      <p class="sidebaritem">Show More</p>
     </div>
     <div class="location">
-      <p>Shop Location</p>
-      <p>Anywhere</p>
-      <p>United States</p>
-      <p>Custom</p>
+      <p class="sidebarheader">Shop Location</p>
+      <p class="sidebaritem">Anywhere</p>
+      <p class="sidebaritem">United States</p>
+      <p class="sidebaritem">Custom</p>
     </div>
     <div class="type">
-      <p>Item Type</p>
-      <p>All Items</p>
-      <p>Handmade</p>
-      <p>Vintage</p>
+      <p class="sidebarheader">Item Type</p>
+      <p class="sidebaritem">All Items</p>
+      <p class="sidebaritem">Handmade</p>
+      <p class="sidebaritem">Vintage</p>
     </div>
     <div class="price">
-      <p>Price</p>
-      <p>Any Price</p>
-      <p>Under $25</p>
-      <p>$25 to $50</p>
-      <p>$50 to $100</p>
-      <p>Over $100</p>
-      <p>Custom</p>
+      <p class="sidebarheader">Price</p>
+      <p class="sidebaritem">Any Price</p>
+      <p class="sidebaritem">Under $25</p>
+      <p class="sidebaritem">$25 to $50</p>
+      <p class="sidebaritem">$50 to $100</p>
+      <p class="sidebaritem">Over $100</p>
+      <p class="sidebaritem">Custom</p>
     </div>
     <div class="color">
-      <p>Black</p>
-      <p>White</p>
-      <p>Red</p>
-      <p>Green</p>
-      <p>Yellow</p>
-      <p>Show More</p>
+      <p class="sidebarheader">Color</p>
+      <p class="sidebaritem">Black</p>
+      <p class="sidebaritem">White</p>
+      <p class="sidebaritem">Red</p>
+      <p class="sidebaritem">Green</p>
+      <p class="sidebaritem">Yellow</p>
+      <p class="sidebaritem">Show More</p>
     </div>
     <div class="ordering">
-      <p>Accepts Etsy gift cards</p>
-      <p>Customizeable</p>
+      <p class="sidebarheader">Ordering Options</p>
+      <p class="sidebaritem">Accepts Etsy gift cards</p>
+      <p class="sidebaritem">Customizeable</p>
     </div>
     <div class="shipping">
-      <p>Ship to</p>
-      <p>United States</p>
+      <p class="sidebarheader">Ship to</p>
+      <p class="sidebaritem">United States</p>
     </div>
   </section>
 
@@ -99,7 +105,7 @@
       <img src="{{ Images.0.url_170x135 }}" alt="">
       <h3 class="itemheader">{{ title }}</h3>
       <p class="shop-name">{{ Shop.shop_name }}</p>
-      <p>STARS GO HERE</p>
+      <p class="stars">&#x02605 &#x02605 &#x02605 &#x02605 &#x02605</p>
       <p class="item-price">${{ price }}</p>
     </div>
   </script>

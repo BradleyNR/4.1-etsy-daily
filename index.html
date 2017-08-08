@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+  <title>Etsy</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <section class="header_section">
+    <h1>Etsy</h1>
+    <form class="navbar-form" role="search">
+      <!-- bootstrap form -->
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search for Items or Shops" size="40">
+      </div>
+      <button id="searchbutton" type="submit" class="btn btn-default">Search</button>
+    </form>
+    <div class="right_navigation">
+      <a>Sell on Etsy</a>
+      <a>Register</a>
+      <a src="#" class="sign-in-button">Sign In</a>
+      <a class="cartbutton">Cart</a>
+    </div>
+  </section>
+
+  <section id="categories-bar">
+    <a href="#" id="clothing-and-acc">Clothing and Accessories</a>
+    <a href="#">Jewelry</a>
+    <a href="#">Craft Supplies and Tools</a>
+    <a href="#">Weddings</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Home and Living</a>
+    <a href="#">Kids and Baby</a>
+    <a href="#">Vintage</a>
+  </section>
+
+  <section id="sidebar">
+    <div class="categories">
+      <p class="sidebarheader">All Categories</p>
+      <a class="sidebaritem">Art and Collectables</a><br>
+      <a class="sidebaritem">Craft Supplies and Tools</a><br>
+      <a class="sidebaritem">Accessories</a><br>
+      <a class="sidebaritem">Clothing</a><br>
+      <a class="sidebaritem">Show More</a>
+    </div>
+    <div class="location">
+      <p class="sidebarheader">Shop Location</p>
+      <a class="sidebaritem">Anywhere</a><br>
+      <a class="sidebaritem">United States</a><br>
+      <a class="sidebaritem">Custom</a>
+    </div>
+    <div class="type">
+      <p class="sidebarheader">Item Type</p>
+      <a class="sidebaritem">All Items</a><br>
+      <a class="sidebaritem">Handmade</a><br>
+      <a class="sidebaritem">Vintage</a>
+    </div>
+    <div class="price">
+      <p class="sidebarheader">Price</p>
+      <a class="sidebaritem">Any Price</a><br>
+      <a class="sidebaritem">Under $25</a><br>
+      <a class="sidebaritem">$25 to $50</a><br>
+      <a class="sidebaritem">$50 to $100</a><br>
+      <a class="sidebaritem">Over $100</a><br>
+      <a class="sidebaritem">Custom</p>
+    </div>
+    <div class="color">
+      <!-- TODO: WHY DOES THIS HAVE WEIRD POSITIONING? -->
+      <p class="sidebarheader">Color</p>
+      <a class="sidebaritem">Black</a><br>
+      <a class="sidebaritem">White</a><br>
+      <a class="sidebaritem">Red</a><br>
+      <a class="sidebaritem">Green</a><br>
+      <a class="sidebaritem">Yellow</a><br>
+      <a class="sidebaritem">Show More</a>
+    </div>
+    <div class="ordering">
+      <p class="sidebarheader">Ordering Options</p>
+      <a class="sidebaritem">Accepts Etsy gift cards</a><br>
+      <a class="sidebaritem">Customizeable</a><br>
+    </div>
+    <div class="shipping">
+      <p class="sidebarheader">Ship to</p>
+      <a class="sidebaritem">United States</a>
+    </div>
+  </section>
+
+
+  <div class="container itemsection">
+    <div class="item-styling">
+      <div id="item-container" class="row">
+        <!-- handlebars goes here -->
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Get fresh Etsy trends and unique gifts delivered right to your inbox.</p>
+    <form class="navbar-form" role="search">
+      <!-- bootstrap form -->
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Enter your Email" size="40">
+      </div>
+      <button id="searchbutton" type="submit" class="btn btn-default">Search</button>
+    </form>
+    <div class="container footersection">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Shop</h5>
+          <p>Gift Cards</p>
+          <p>Etsy Blog</p>
+          <p>Wholesale</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Sell</h5>
+          <p>Sell on Etsy</p>
+          <p>Teams</p>
+          <p>Forums</p>
+        </div>
+        <div class="col-md-3">
+          <h5>About</h5>
+          <p>Etsy, Inc.</p>
+          <p>Policies/p>
+            <p>Investors</p>
+            <p>Careers</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Etsy</h5>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Pinterest</p>
+          <p>Twitter</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+  <!-- Handlebars template -->
+  <script id="item-template" type="text/x-handlebars-template">
+    <div class="item-column col-md-3">
+      <img src="{{ Images.0.url_170x135 }}" alt="">
+      <h3 class="itemheader">{{ title }}</h3>
+      <p class="shop-name">{{ Shop.shop_name }}</p>
+      <p class="stars">&#x02605 &#x02605 &#x02605 &#x02605 &#x02605 ({{num_favorers}})</p>
+      <p class="item-price">${{ price }}</p>
+    </div>
+  </script>
+  <script src="js/bundle.js"></script>
+</body>
+
+</html>
